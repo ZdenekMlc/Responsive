@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  min-width: 250px;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 856px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Menu */
+nav {
+  background-color: #33292a;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav li {
+  padding: 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  display: none;
+  height: 35px;
+  width: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+span {
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+/* Konec menu */
+
+/* Sekce 1 */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.primary-title {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  color: #ffffff;
+  text-align: right;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+}
+/* Konec sekce 1 */
+
+/* Sekce 2 */
+.secondary-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 30px 0;
+  padding: 0 30px;
+}
+
+.content-text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  padding: 0 30px;
+}
+
+.about-image {
+  padding: 30px;
+}
+/* Konec sekce 2 */
+
+/* Sekce 3 */
+.activities-section {
+  background-color: #33292a;
+}
+
+.activities-section .secondary-title,
+.activities-section .content-text {
+  color: white;
+  text-align: center;
+}
+
+.activities-section .secondary-title {
+  padding-top: 30px;
+}
+
+.activities-section .content-text {
+  padding: 0 30px 0 30px;
+}
+
+.activities-list {
+  padding: 30px;
+}
+
+.activity-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.activity-icon {
+  width: 20%;
+  margin: auto;
+}
+
+.tertiary-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 12px;
+}
+/* Konec sekce 3 */
+
+/* Sekce 4 */
+.our-trips-section {
+  padding: 30px;
+}
+
+.our-trips-section .trip-title {
+  text-align: center;
+  background-color: #f2f2f2;
+  font-size: 32px;
+  font-weight: 700;
+  height: 80px;
+  padding-top: 20px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.trip-image {
+  border-radius: 5px;
+}
+/* Konnec sekce 4 */
+
+/* Sekce 5 */
+.contact-section {
+  background-color: #644b4f;
+  height: 600px;
+  display: flex;
+}
+
+.contact-section .secondary-title,
+.contact-section .content-text {
+  color: #ffffff;
+  padding: 0 30px;
+}
+
+.contact-width {
+  max-width: 100%;
+}
+
+.contact-link {
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 8px 12px;
+  margin-left: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-link:hover {
+  background-color: #e9877b;
+}
+/* Konec sekce 5 */
+
+/* Sekce 6 */
+.reviews-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.review-item {
+  padding: 30px 0px;
+}
+
+.review-img {
+  margin: 30px;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* Konnec sekce 6 */
+
+/* Sekce 7 */
+.image-gallery img {
+  display: block;
+}
+/* Konec sekce 7 */
+
+/* footr */
+.footer {
+  background-color: #333333;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-link {
+  color: #efa69d;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #e9877b;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+/* Konec footer */
+
+/* Styl pro tablety */
+@media (min-width: 576px) {
+  /* Sekce 1 */
+  .primary-title {
+    font-size: 42px;
+  }
+
+  /* Sekce 2 */
+  .about-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-content {
+    flex: 1;
+    padding: 0 30px;
+  }
+
+  .about-position {
+    flex: 1;
+  }
+
+  .about-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 30px 30px 30px 0;
+  }
+
+  /* Sekce 3 */
+
+  .activities-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .activity-icon {
+    width: 50%;
+  }
+
+  /* Sekce 4 */
+  .trips-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trip-image {
+    padding: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .our-trips-section .trip-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  /* Sekce 5 */
+  .contact-layout {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-title {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .contact-content {
+    width: 50%;
+  }
+
+  .contact-width {
+    max-width: 70%;
+  }
+
+  /* Sekce 6 */
+  .reviews-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .review-item {
+    padding: 30px;
+  }
+
+  .reviews-width {
+    max-width: 40%;
+    margin: auto;
+  }
+
+  /* Sekce 7 */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Zobrazení menu na desktopu */
+@media (min-width: 768px) {
+  .primary-title {
+    font-size: 76px;
+    bottom: 20%;
+    right: 10%;
+  }
+}
